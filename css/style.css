@@ -1,0 +1,1758 @@
+/* =========================================================
+   BIRTHDAY WEBSITE
+   COMPLETE STYLE.CSS
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #8e0000;
+    color: #fff;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.small-title {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 46px;
+    color: #f4d9c8;
+    margin-bottom: -8px;
+    transform: rotate(-5deg);
+}
+
+.home-content h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 7vw, 100px);
+    color: #f8eee4;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.main-cake {
+    position: relative;
+    width: 260px;
+    height: 220px;
+    background: transparent;
+    transition: transform 0.3s ease;
+}
+
+.main-cake:hover {
+    transform: scale(1.05);
+}
+
+.cake-body {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    width: 200px;
+    height: 105px;
+    background: #e9a0a6;
+    border-radius: 10px 10px 22px 22px;
+}
+
+.cake-body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    height: 18px;
+    background: #fff4e9;
+    border-radius: 50%;
+}
+
+.cake-body::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    height: 12px;
+    background: #d66f7a;
+    border-radius: 50%;
+}
+
+.cake-top {
+    position: absolute;
+    left: 35px;
+    bottom: 105px;
+    width: 190px;
+    height: 45px;
+    background: #fff4e9;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.cream {
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    background: #fff4e9;
+    border-radius: 50%;
+}
+
+.cream1 {
+    left: 25px;
+    bottom: -5px;
+}
+
+.cream2 {
+    left: 78px;
+    bottom: -7px;
+}
+
+.cream3 {
+    right: 20px;
+    bottom: -4px;
+}
+
+.cherry {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #b72b36;
+    z-index: 5;
+}
+
+.cherry1 {
+    left: 35px;
+    top: 7px;
+}
+
+.cherry2 {
+    left: 78px;
+    top: 14px;
+}
+
+.cherry3 {
+    right: 65px;
+    top: 7px;
+}
+
+.cherry4 {
+    right: 25px;
+    top: 15px;
+}
+
+.candle {
+    position: absolute;
+    width: 12px;
+    height: 55px;
+    bottom: 140px;
+    background: #f5d7b5;
+    border-radius: 5px;
+    z-index: 6;
+}
+
+.candle1 {
+    left: 75px;
+}
+
+.candle2 {
+    left: 124px;
+}
+
+.candle3 {
+    left: 170px;
+}
+
+.flame {
+    position: absolute;
+    left: 2px;
+    top: -20px;
+    width: 9px;
+    height: 18px;
+    background: #ffd26a;
+    border-radius: 50%;
+}
+
+.click-here {
+    margin-top: 20px;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 24px;
+    color: #f5dcd0;
+}
+
+
+/* =========================================================
+   GIFT MENU
+========================================================= */
+
+.menu-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.menu-title {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(50px, 6vw, 78px);
+    color: #f7ded0;
+    font-weight: normal;
+    margin-bottom: 55px;
+    transform: rotate(-3deg);
+}
+
+.gifts {
+    width: min(1050px, 95%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.gift {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gift:hover {
+    transform: translateY(-10px);
+}
+
+.gift-picture {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift p {
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #f8e8df;
+}
+
+
+/* =========================================================
+   MESSAGE ICON
+========================================================= */
+
+.envelope {
+    position: relative;
+    width: 170px;
+    height: 115px;
+    background: #f2e6d9;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.envelope::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-bottom: 62px solid #dcc9b8;
+    z-index: 2;
+}
+
+.envelope-flap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-top: 65px solid #ead9c9;
+    z-index: 3;
+}
+
+.envelope-heart {
+    position: absolute;
+    left: 68px;
+    top: 40px;
+    color: #a22b35;
+    font-size: 28px;
+    z-index: 5;
+}
+
+
+/* =========================================================
+   FLOWER MENU ICON
+========================================================= */
+
+.dozen-bouquet {
+    position: relative;
+    width: 230px;
+    height: 235px;
+}
+
+.menu-rose {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+}
+
+.rose-layer {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.layer1 {
+    width: 48px;
+    height: 48px;
+    left: 5px;
+    top: 5px;
+    background: #b5162b;
+}
+
+.layer2 {
+    width: 35px;
+    height: 35px;
+    left: 11px;
+    top: 11px;
+    background: #8f0d20;
+    border: 5px solid #c51b32;
+}
+
+.layer3 {
+    width: 24px;
+    height: 24px;
+    left: 17px;
+    top: 17px;
+    background: #a81127;
+    border: 4px solid #69091a;
+}
+
+.rose-core {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 24px;
+    top: 24px;
+    background: #d42b40;
+    border-radius: 50%;
+}
+
+.r1 { left: 73px; top: 5px; }
+.r2 { left: 116px; top: 13px; }
+.r3 { left: 31px; top: 30px; }
+.r4 { left: 74px; top: 45px; }
+.r5 { left: 118px; top: 55px; }
+.r6 { left: 160px; top: 40px; }
+.r7 { left: 31px; top: 72px; }
+.r8 { left: 65px; top: 86px; }
+.r9 { left: 108px; top: 91px; }
+.r10 { left: 151px; top: 83px; }
+.r11 { left: 82px; top: 125px; }
+.r12 { left: 128px; top: 124px; }
+
+.menu-leaf {
+    position: absolute;
+    width: 43px;
+    height: 20px;
+    background: #526b43;
+    border-radius: 100% 0 100% 0;
+}
+
+.ml1 { left: 22px; top: 105px; transform: rotate(-30deg); }
+.ml2 { left: 178px; top: 103px; transform: rotate(30deg); }
+.ml3 { left: 38px; top: 133px; transform: rotate(-18deg); }
+.ml4 { left: 169px; top: 135px; transform: rotate(22deg); }
+.ml5 { left: 57px; top: 151px; transform: rotate(-8deg); }
+.ml6 { left: 148px; top: 153px; transform: rotate(12deg); }
+.ml7 { left: 83px; top: 158px; transform: rotate(-3deg); }
+.ml8 { left: 123px; top: 158px; transform: rotate(7deg); }
+
+.menu-wrap {
+    position: absolute;
+    width: 175px;
+    height: 115px;
+    left: 28px;
+    bottom: 12px;
+    z-index: 12;
+    background: #111;
+    clip-path: polygon(
+        3% 0,
+        97% 0,
+        83% 100%,
+        50% 76%,
+        17% 100%
+    );
+}
+
+.menu-ribbon {
+    position: absolute;
+    width: 55px;
+    height: 18px;
+    left: 88px;
+    bottom: 25px;
+    background: #050505;
+    border-radius: 50%;
+    z-index: 15;
+}
+
+
+/* =========================================================
+   MINI CAKE - MENU
+========================================================= */
+
+.mini-cake {
+    position: relative;
+    width: 180px;
+    height: 170px;
+}
+
+.mini-cake-body {
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    width: 140px;
+    height: 85px;
+    background: #e6a0a5;
+    border-radius: 8px 8px 18px 18px;
+}
+
+.mini-cake-top {
+    position: absolute;
+    left: 22px;
+    bottom: 90px;
+    width: 136px;
+    height: 38px;
+    background: #fff0e6;
+    border-radius: 50%;
+}
+
+.mini-candle {
+    position: absolute;
+    left: 83px;
+    bottom: 123px;
+    width: 10px;
+    height: 38px;
+    background: #f5d7b5;
+}
+
+.mini-candle span {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 1px;
+    top: -15px;
+    background: #ffd36c;
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   CAMERA
+========================================================= */
+
+.camera {
+    position: relative;
+    width: 180px;
+    height: 130px;
+    background: #e8ddd3;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.camera::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: -18px;
+    width: 58px;
+    height: 25px;
+    background: #e8ddd3;
+}
+
+.camera-top {
+    position: absolute;
+    left: 85px;
+    top: 8px;
+    width: 50px;
+    height: 8px;
+    background: #c9b9ab;
+}
+
+.camera-lens {
+    position: absolute;
+    left: 55px;
+    top: 35px;
+    width: 70px;
+    height: 70px;
+    background: #8b7b70;
+    border: 8px solid #d0c1b5;
+    border-radius: 50%;
+}
+
+.camera-inner {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 28px;
+    height: 28px;
+    background: #453a35;
+    border-radius: 50%;
+}
+
+.camera-button {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    width: 13px;
+    height: 13px;
+    background: #a45c61;
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   MESSAGE PAGE
+========================================================= */
+
+.message-page {
+    min-height: 100vh;
+    background: #8e0000;
+    overflow: hidden;
+}
+
+.message-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-page .letter {
+    position: relative;
+    z-index: 20;
+    width: 410px;
+    min-height: 440px;
+    background: #f8f3e8;
+    border: 1px solid #ddd2c5;
+    padding: 45px 42px;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.22);
+}
+
+.message-page .letter::before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 1px solid #e4d9cc;
+}
+
+.message-page .letter-content {
+    position: relative;
+    z-index: 2;
+}
+
+.message-page .letter-content p {
+    font-size: 14px;
+    line-height: 1.65;
+    color: #49352e;
+    margin-bottom: 22px;
+}
+
+.message-page .letter-content .letter-ending {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+.message-page .polaroids {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    z-index: 5;
+}
+
+.message-page .left-polaroids {
+    left: 11%;
+}
+
+.message-page .right-polaroids {
+    right: 11%;
+}
+
+.message-page .polaroid {
+    position: absolute;
+    width: 180px;
+    height: 215px;
+    padding: 10px 10px 30px;
+    background: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.message-page .polaroid img {
+    display: block;
+    width: 160px;
+    height: 175px;
+    object-fit: cover;
+}
+
+.message-page .photo-one {
+    top: 17%;
+    left: 175px;
+    transform: rotate(-8deg);
+}
+
+.message-page .photo-two {
+    top: 39%;
+    left: 75px;
+    transform: rotate(5deg);
+}
+
+.message-page .photo-three {
+    top: 64%;
+    left: 160px;
+    transform: rotate(-7deg);
+}
+
+.message-page .photo-four {
+    top: 17%;
+    right: 175px;
+    transform: rotate(8deg);
+}
+
+.message-page .photo-five {
+    top: 39%;
+    right: 75px;
+    transform: rotate(-6deg);
+}
+
+.message-page .photo-six {
+    top: 64%;
+    right: 160px;
+    transform: rotate(7deg);
+}
+
+
+/* =========================================================
+   FLOWERS PAGE
+========================================================= */
+
+.flowers-page {
+    min-height: 100vh;
+    background: #8e0000;
+    overflow: hidden;
+}
+
+.flowers-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    position: relative;
+}
+
+.flower-bouquet {
+    position: relative;
+    width: 480px;
+    height: 560px;
+    flex-shrink: 0;
+}
+
+.big-stem {
+    position: absolute;
+    width: 8px;
+    height: 350px;
+    background: #3f6438;
+    bottom: 85px;
+    border-radius: 10px;
+    transform-origin: bottom center;
+    z-index: 2;
+}
+
+.stem-one { left: 165px; transform: rotate(-22deg); }
+.stem-two { left: 185px; transform: rotate(-17deg); }
+.stem-three { left: 205px; transform: rotate(-12deg); }
+.stem-four { left: 225px; transform: rotate(-7deg); }
+.stem-five { left: 245px; transform: rotate(-2deg); }
+.stem-six { left: 265px; transform: rotate(3deg); }
+.stem-seven { left: 285px; transform: rotate(8deg); }
+.stem-eight { left: 305px; transform: rotate(13deg); }
+.stem-nine { left: 325px; transform: rotate(18deg); }
+.stem-ten { left: 345px; transform: rotate(23deg); }
+.stem-eleven { left: 225px; transform: rotate(1deg); }
+.stem-twelve { left: 285px; transform: rotate(6deg); }
+
+.big-leaf {
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    background: #58784d;
+    border-radius: 100% 0 100% 0;
+    z-index: 4;
+}
+
+.leaf-one { left: 105px; bottom: 275px; transform: rotate(-35deg); }
+.leaf-two { left: 305px; bottom: 290px; transform: rotate(30deg); }
+.leaf-three { left: 120px; bottom: 210px; transform: rotate(-20deg); }
+.leaf-four { left: 320px; bottom: 220px; transform: rotate(25deg); }
+.leaf-five { left: 155px; bottom: 160px; transform: rotate(-15deg); }
+.leaf-six { left: 285px; bottom: 170px; transform: rotate(15deg); }
+.leaf-seven { left: 195px; bottom: 230px; transform: rotate(8deg); }
+.leaf-eight { left: 245px; bottom: 135px; transform: rotate(-8deg); }
+
+
+/* ROSES */
+
+.big-rose {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    z-index: 10;
+}
+
+.rose-petal {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    left: 22px;
+    top: 17px;
+    background: #b3132b;
+    border-radius: 55% 55% 45% 45%;
+    transform-origin: 30px 35px;
+    box-shadow:
+        inset 5px 5px 8px rgba(255,255,255,0.10),
+        inset -7px -7px 10px rgba(75,0,12,0.35);
+}
+
+.rp1 { transform: rotate(0deg); }
+.rp2 { transform: rotate(72deg); }
+.rp3 { transform: rotate(144deg); }
+.rp4 { transform: rotate(216deg); }
+.rp5 { transform: rotate(288deg); }
+
+.rose-inner {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 25px;
+    top: 25px;
+    border-radius: 50%;
+    background: #8e0b20;
+    border: 7px solid #c41b32;
+    z-index: 8;
+}
+
+.rose-center {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 41px;
+    top: 41px;
+    border-radius: 50%;
+    background: #650716;
+    border: 4px solid #a80f25;
+    z-index: 12;
+}
+
+.rose-center::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 3px;
+    top: 3px;
+    border: 2px solid #d72b43;
+    border-radius: 50%;
+}
+
+.rose-one { left: 105px; top: 105px; transform: scale(0.85); }
+.rose-two { left: 175px; top: 60px; transform: scale(0.95); }
+.rose-three { left: 250px; top: 50px; transform: scale(0.9); }
+.rose-four { left: 320px; top: 105px; transform: scale(0.85); }
+.rose-five { left: 140px; top: 125px; transform: scale(0.95); }
+.rose-six { left: 215px; top: 110px; transform: scale(1); }
+.rose-seven { left: 285px; top: 135px; transform: scale(0.9); }
+.rose-eight { left: 95px; top: 175px; transform: scale(0.78); }
+.rose-nine { left: 165px; top: 175px; transform: scale(0.88); }
+.rose-ten { left: 245px; top: 180px; transform: scale(0.86); }
+.rose-eleven { left: 310px; top: 180px; transform: scale(0.75); }
+.rose-twelve { left: 205px; top: 220px; transform: scale(0.75); }
+
+
+/* BLACK WRAP */
+
+.black-flower-wrap {
+    position: absolute;
+    width: 310px;
+    height: 220px;
+    left: 85px;
+    bottom: 35px;
+    background:
+        linear-gradient(
+            70deg,
+            #080808 0%,
+            #191717 20%,
+            #090909 40%,
+            #292525 58%,
+            #0a0a0a 78%,
+            #211e1e 100%
+        );
+    clip-path: polygon(
+        3% 0,
+        97% 0,
+        84% 100%,
+        50% 72%,
+        16% 100%
+    );
+    z-index: 20;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+.black-flower-wrap::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    height: 210px;
+    background: rgba(255,255,255,0.12);
+    transform: rotate(4deg);
+}
+
+.black-flower-wrap::after {
+    content: "";
+    position: absolute;
+    left: 35%;
+    top: 0;
+    width: 2px;
+    height: 210px;
+    background: rgba(255,255,255,0.07);
+    transform: rotate(-5deg);
+}
+
+
+/* RIBBON */
+
+.flower-ribbon {
+    position: absolute;
+    left: 208px;
+    bottom: 80px;
+    width: 65px;
+    height: 30px;
+    z-index: 30;
+}
+
+.ribbon-knot {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 18px;
+    top: 2px;
+    background: #050505;
+    border-radius: 50%;
+}
+
+.ribbon-left {
+    position: absolute;
+    width: 65px;
+    height: 32px;
+    left: -45px;
+    top: 4px;
+    background: #0a0a0a;
+    transform: rotate(10deg);
+    clip-path: polygon(
+        0 0,
+        100% 20%,
+        75% 100%,
+        45% 65%,
+        0 100%
+    );
+}
+
+.ribbon-right {
+    position: absolute;
+    width: 65px;
+    height: 32px;
+    right: -45px;
+    top: 4px;
+    background: #0a0a0a;
+    transform: rotate(-10deg);
+    clip-path: polygon(
+        0 20%,
+        100% 0,
+        100% 100%,
+        55% 65%,
+        25% 100%
+    );
+}
+
+
+/* FLOWER LETTER */
+
+.flower-letter {
+    position: relative;
+    width: 420px;
+    min-height: 470px;
+    background: #f8f3e8;
+    border: 1px solid #ddd2c5;
+    padding: 55px 48px;
+    color: #49352e;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.22);
+    transform: rotate(1deg);
+    z-index: 15;
+}
+
+.flower-letter::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 1px solid #e4d9cc;
+}
+
+.flower-letter-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.flower-letter-inner p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.flower-greeting {
+    font-size: 17px !important;
+    margin-bottom: 30px !important;
+}
+
+.flower-ending {
+    font-family: "Brush Script MT", "Segoe Script", cursive !important;
+    font-size: 27px !important;
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+/* =========================================================
+   CAKE PAGE
+========================================================= */
+
+.cake-page {
+    min-height: 100vh;
+    background: #8e0000;
+    overflow: hidden;
+}
+
+.cake-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+
+/* =========================================================
+   BIG BIRTHDAY CAKE
+========================================================= */
+
+.birthday-cake {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+
+/* CAKE PLATE */
+
+.cake-plate {
+    position: absolute;
+    width: 390px;
+    height: 35px;
+    left: 55px;
+    bottom: 55px;
+    background: #f3e7dc;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.25);
+}
+
+
+/* BOTTOM CAKE */
+
+.cake-bottom-layer {
+    position: absolute;
+    width: 330px;
+    height: 130px;
+    left: 85px;
+    bottom: 90px;
+    background: #c95768;
+    border-radius: 12px 12px 25px 25px;
+    z-index: 5;
+    box-shadow:
+        inset 0 -15px 0 rgba(120,20,35,0.18),
+        0 8px 12px rgba(0,0,0,0.18);
+}
+
+.cake-bottom-layer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 100%;
+    height: 40px;
+    background: #fff4eb;
+    border-radius: 50%;
+}
+
+
+/* MIDDLE CAKE */
+
+.cake-middle-layer {
+    position: absolute;
+    width: 275px;
+    height: 115px;
+    left: 112px;
+    bottom: 205px;
+    background: #e48b99;
+    border-radius: 12px 12px 20px 20px;
+    z-index: 8;
+    box-shadow:
+        inset 0 -12px 0 rgba(170,50,70,0.15),
+        0 7px 12px rgba(0,0,0,0.15);
+}
+
+.cake-middle-layer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -18px;
+    width: 100%;
+    height: 36px;
+    background: #fff6ee;
+    border-radius: 50%;
+}
+
+
+/* TOP CAKE */
+
+.cake-top-layer {
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    left: 140px;
+    bottom: 300px;
+    background: #efb0b6;
+    border-radius: 12px 12px 18px 18px;
+    z-index: 11;
+    box-shadow:
+        inset 0 -10px 0 rgba(180,60,80,0.12),
+        0 6px 10px rgba(0,0,0,0.15);
+}
+
+.cake-top-layer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -17px;
+    width: 100%;
+    height: 34px;
+    background: #fff8f1;
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   CAKE CREAM
+========================================================= */
+
+.cake-cream {
+    position: absolute;
+    width: 35px;
+    height: 18px;
+    background: #fff8f1;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.cream-one {
+    left: 25px;
+    bottom: -7px;
+}
+
+.cream-two {
+    left: 80px;
+    bottom: -5px;
+}
+
+.cream-three {
+    left: 135px;
+    bottom: -7px;
+}
+
+.cream-four {
+    right: 18px;
+    bottom: -4px;
+}
+
+
+/* =========================================================
+   CAKE DECORATIONS
+========================================================= */
+
+.cake-decoration {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f7d39b;
+    z-index: 10;
+}
+
+.dot-one {
+    left: 30px;
+    top: 48px;
+}
+
+.dot-two {
+    left: 85px;
+    top: 65px;
+}
+
+.dot-three {
+    left: 140px;
+    top: 45px;
+}
+
+.dot-four {
+    left: 195px;
+    top: 68px;
+}
+
+.dot-five {
+    left: 120px;
+    top: 88px;
+}
+
+
+/* =========================================================
+   SMALL CAKE FLOWERS
+========================================================= */
+
+.cake-flower {
+    position: absolute;
+    font-size: 27px;
+    color: #fff2e8;
+    z-index: 12;
+}
+
+.flower-a {
+    left: 45px;
+    bottom: 35px;
+}
+
+.flower-b {
+    left: 145px;
+    bottom: 25px;
+}
+
+.flower-c {
+    right: 40px;
+    bottom: 35px;
+}
+
+
+/* =========================================================
+   CANDLES
+========================================================= */
+
+.big-candle {
+    position: absolute;
+    width: 16px;
+    height: 85px;
+    bottom: 380px;
+    background: #f5d7b5;
+    border-radius: 5px;
+    z-index: 20;
+    box-shadow: inset -3px 0 rgba(170,100,70,0.12);
+}
+
+.candle-one {
+    left: 165px;
+}
+
+.candle-two {
+    left: 205px;
+}
+
+.candle-three {
+    left: 245px;
+}
+
+.candle-four {
+    left: 285px;
+}
+
+.candle-five {
+    left: 325px;
+}
+
+
+/* FLAMES */
+
+.big-flame {
+    position: absolute;
+    width: 13px;
+    height: 25px;
+    left: 2px;
+    top: -26px;
+    background: #ffd166;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(5deg);
+    box-shadow:
+        0 0 12px rgba(255,210,90,0.7),
+        0 0 25px rgba(255,180,50,0.35);
+}
+
+.big-flame::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 11px;
+    left: 4px;
+    top: 7px;
+    background: #fff1c4;
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   CAKE LETTER
+========================================================= */
+
+.cake-letter {
+    position: relative;
+    width: 420px;
+    min-height: 460px;
+    background: #f8f3e8;
+    border: 1px solid #ddd2c5;
+    padding: 55px 48px;
+    color: #49352e;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.22);
+    transform: rotate(-1deg);
+}
+
+.cake-letter::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 1px solid #e4d9cc;
+}
+
+.cake-letter-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.cake-letter-inner p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.cake-greeting {
+    font-size: 17px !important;
+    margin-bottom: 30px !important;
+}
+
+.cake-ending {
+    font-family: "Brush Script MT", "Segoe Script", cursive !important;
+    font-size: 28px !important;
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-button {
+    padding: 9px 20px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.8);
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.message-page .back-button,
+.flowers-page .back-button,
+.cake-page .back-button {
+    position: fixed;
+    right: 45px;
+    bottom: 35px;
+    z-index: 100;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .message-page .polaroids {
+        width: 300px;
+    }
+
+    .message-page .left-polaroids {
+        left: 0;
+    }
+
+    .message-page .right-polaroids {
+        right: 0;
+    }
+
+    .message-page .polaroid {
+        width: 165px;
+        height: 200px;
+        padding: 8px 8px 27px;
+    }
+
+    .message-page .polaroid img {
+        width: 149px;
+        height: 165px;
+    }
+
+    .message-page .photo-one {
+        left: 125px;
+    }
+
+    .message-page .photo-two {
+        left: 40px;
+    }
+
+    .message-page .photo-three {
+        left: 110px;
+    }
+
+    .message-page .photo-four {
+        right: 125px;
+    }
+
+    .message-page .photo-five {
+        right: 40px;
+    }
+
+    .message-page .photo-six {
+        right: 110px;
+    }
+
+    .flower-bouquet {
+        transform: scale(0.82);
+        margin-right: -65px;
+    }
+
+    .flower-letter {
+        width: 390px;
+    }
+
+    .birthday-cake {
+        transform: scale(0.82);
+    }
+
+    .cake-letter {
+        width: 390px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .gifts {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 650px;
+    }
+
+    .gift-picture {
+        height: 190px;
+    }
+
+    .flowers-content,
+    .cake-content {
+        gap: 0;
+    }
+
+    .flower-bouquet,
+    .birthday-cake {
+        transform: scale(0.7);
+        margin-right: -100px;
+    }
+
+    .flower-letter,
+    .cake-letter {
+        width: 360px;
+        min-height: 420px;
+        padding: 40px 32px;
+    }
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .home-content {
+        padding: 30px 20px;
+    }
+
+    .small-title {
+        font-size: 38px;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+    }
+
+    .main-cake {
+        transform: scale(0.85);
+    }
+
+    .click-here {
+        font-size: 20px;
+    }
+
+
+    /* MENU */
+
+    .menu-content {
+        padding: 40px 20px;
+    }
+
+    .menu-title {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .gifts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gift-picture {
+        height: 150px;
+        transform: scale(0.75);
+    }
+
+    .gift p {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+
+    /* MESSAGE */
+
+    .message-page {
+        overflow-y: auto;
+    }
+
+    .message-content {
+        min-height: 100vh;
+        height: auto;
+        padding: 40px 20px 120px;
+        flex-direction: column;
+    }
+
+    .message-page .letter {
+        width: min(90vw, 400px);
+        min-height: auto;
+        padding: 35px 28px;
+    }
+
+    .message-page .polaroids {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        left: auto;
+        right: auto;
+        margin-top: 25px;
+    }
+
+
+    /* FLOWERS */
+
+    .flowers-page {
+        overflow-y: auto;
+    }
+
+    .flowers-content {
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 20px 20px 110px;
+    }
+
+    .flower-bouquet {
+        transform: scale(0.55);
+        margin-top: -65px;
+        margin-bottom: -125px;
+        margin-right: 0;
+    }
+
+    .flower-letter {
+        width: min(90vw, 400px);
+        min-height: auto;
+        padding: 40px 30px;
+        transform: rotate(0deg);
+    }
+
+
+    /* CAKE */
+
+    .cake-page {
+        overflow-y: auto;
+    }
+
+    .cake-content {
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 20px 20px 110px;
+    }
+
+    .birthday-cake {
+        transform: scale(0.55);
+        margin-top: -70px;
+        margin-bottom: -120px;
+        margin-right: 0;
+    }
+
+    .cake-letter {
+        width: min(90vw, 400px);
+        min-height: auto;
+        padding: 40px 30px;
+        transform: rotate(0deg);
+    }
+
+
+    /* BACK BUTTON */
+
+    .message-page .back-button,
+    .flowers-page .back-button,
+    .cake-page .back-button {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+
+/* =========================================================
+   MEMORIES / VIDEO PAGE
+   ONLY NEW SECTION ADDED
+========================================================= */
+
+.video-page {
+    min-height: 100vh;
+    background: #8e0000;
+    overflow: hidden;
+}
+
+.video-content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px 100px;
+}
+
+
+/* MEMORY TITLE */
+
+.memory-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.memory-title span {
+    display: block;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 38px;
+    color: #f4d9c8;
+    margin-bottom: -5px;
+    transform: rotate(-4deg);
+}
+
+.memory-title h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 6vw, 78px);
+    font-weight: normal;
+    color: #f8eee4;
+}
+
+
+/* VIDEO FRAME */
+
+.video-frame {
+    position: relative;
+    width: min(850px, 88vw);
+    padding: 12px;
+    background: #f8f3e8;
+    border: 1px solid #ddd2c5;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transform: rotate(-1deg);
+}
+
+.video-frame::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border: 1px solid #e4d9cc;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.video-frame video {
+    display: block;
+    width: 100%;
+    max-height: 65vh;
+    background: #111;
+    object-fit: contain;
+}
+
+
+/* MEMORY TEXT */
+
+.memory-message {
+    margin-top: 25px;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 25px;
+    color: #f5dcd0;
+    text-align: center;
+}
+
+.memory-ending {
+    margin-top: 5px;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 25px;
+    color: #f4d9c8;
+    text-align: center;
+}
+
+
+/* VIDEO PAGE BACK BUTTON */
+
+.video-page .back-button {
+    position: fixed;
+    right: 45px;
+    bottom: 35px;
+    z-index: 100;
+}
+
+
+/* =========================================================
+   VIDEO PAGE — PHONE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .video-page {
+        overflow-y: auto;
+    }
+
+    .video-content {
+        min-height: 100vh;
+        padding: 35px 20px 100px;
+    }
+
+    .memory-title {
+        margin-bottom: 20px;
+    }
+
+    .memory-title span {
+        font-size: 30px;
+    }
+
+    .memory-title h1 {
+        font-size: 48px;
+    }
+
+    .video-frame {
+        width: 94vw;
+        padding: 9px;
+        transform: rotate(0deg);
+    }
+
+    .video-frame video {
+        width: 100%;
+        max-height: 55vh;
+    }
+
+    .memory-message {
+        font-size: 21px;
+        padding: 0 10px;
+    }
+
+    .memory-ending {
+        font-size: 21px;
+        padding: 0 10px;
+    }
+
+    .video-page .back-button {
+        right: 20px;
+        bottom: 20px;
+    }
+}
